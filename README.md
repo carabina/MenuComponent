@@ -5,18 +5,15 @@
 [![CocoaPods](http://img.shields.io/cocoapods/p/MenuComponent.svg?style=flat)](https://cocoapods.org/pods/MenuComponent)&nbsp;
 
 多功能滑动菜单，实现各控制器的滚动展示，支持点击、左右滑动以及分级。
-
-# Usage
-
 ![MenuComponent](MenuComponent.gif)
 
-## CocoaPods
+## 安装 [CocoaPods]
 
 1. `pod 'MenuComponent', '~> 1.0'`;
 2. `pod install` / `pod update`;
 3. `#import <MenuComponent/MenuTabBarController.h>`.
 
-## Example
+## 使用说明
 
 本组件，包含：`MenuTabBarController`和`MenuTabBar`，两者均可单独使用。其中`MenuTabBarController`通过使用`addChildViewController`将各子控制器加在同一父控制器中，通过点击菜单按钮或滑动，实现各子控制器的切换。部分UI可通过以下属性自行设置。
 
@@ -94,13 +91,14 @@ tabBarController.subViewControllers = @[firstVC,seconVC,thirdVC];
 }
 ```
 
-# Requirements
+## 使用要求
 
-This library requires `iOS 7.0+` and `Xcode 7.0+`.
+* iOS 7.0 or later.
+* Xcode 7.0 or later.
+* OS X 10.10 or later.
 
+## 许可证
 
-# License
-
-MenuComponent is provided under the MIT license. See LICENSE file for details.
+MIT
 
 
