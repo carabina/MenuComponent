@@ -10,7 +10,7 @@
 
 ## 安装 [CocoaPods]
 
-1. `pod 'MenuComponent', '~> 1.0'`;
+1. `pod 'MenuComponent', '~> 1.1'`;
 2. `pod install` / `pod update`;
 3. `#import <MenuComponent/MenuTabBarController.h>`.
 

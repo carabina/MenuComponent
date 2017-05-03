@@ -92,9 +92,12 @@
 - (MenuTabBar *)menuTabBar
 {
     if (!_menuTabBar) {
-        CGFloat height = kMinMenuHeight;
-        if (self.tabBarType == MenuTabBarTypeImage) {
-            height = kMaxMenuHeight;
+        CGFloat height = self.tabBarHeight;
+        if (height == 0) {
+            height = kMinMenuHeight;
+            if (self.tabBarType == MenuTabBarTypeImage) {
+                height = kMaxMenuHeight;
+            }
         }
         _menuTabBar = [[MenuTabBar alloc] initWithFrame:CGRectMake(0, 0, self.view.width, height)];
         _menuTabBar.delegate = self;

@@ -92,6 +92,7 @@
         }
         case 4: //MenuTabBarTypeImage
         {
+            tabBarController.tabBarHeight = 100;
             tabBarController.currentIndicatorColor = [UIColor blackColor];
             tabBarController.tabBarType = MenuTabBarTypeImage;
             tabBarController.titleArray = [_baseTitleArray subarrayWithRange:NSMakeRange(0, 3)];
