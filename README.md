@@ -56,7 +56,7 @@ typedef enum {
 //文字数组
 @property (nonatomic,strong) NSArray *titleArray;
 //图片数组
-@property (nonatomic,strong) NSArray *imageArray;
+@property (nonatomic,strong) NSArray *imageNameArray;
 //子控制器数组
 @property (nonatomic,strong) NSArray *subViewControllers;
 //当前选择的Index
@@ -83,7 +83,7 @@ tabBarController.indicatorColor = [UIColor blackColor];
 tabBarController.currentIndicatorColor = [UIColor redColor];
 tabBarController.indicatorLineColor = [UIColor redColor];
 tabBarController.titleArray = @[@"新朋友",@"群聊",@"公众号"];
-tabBarController.imageArray = @[[UIImage imageNamed:@"item_0"],[UIImage imageNamed:@"item_1"],[UIImage imageNamed:@"item_2"]];
+tabBarController.imageNameArray = @[@"item_0",@"item_1",@"item_2"];
 tabBarController.subViewControllers = @[firstVC,seconVC,thirdVC];
 [tabBarController setParentController:self];
 ```
