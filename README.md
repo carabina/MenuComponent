@@ -43,6 +43,8 @@ typedef enum {
 @property (nonatomic,assign) BOOL scrollAnimation;
 //点击切换文字是否变大
 @property (nonatomic,assign) BOOL enlargeEnabled;
+//顶部菜单高度
+@property (nonatomic,assign) CGFloat tabBarHeight;
 //字体
 @property (nonatomic,strong) UIFont *font;
 //标签颜色
