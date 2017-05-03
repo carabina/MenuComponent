@@ -39,7 +39,7 @@
     SixthViewController *sixthVC = [[SixthViewController alloc] init];
 
     _baseTitleArray = [[NSArray alloc] initWithObjects:@"新朋友",@"群聊",@"公众号",@"好友动态",@"附近",@"兴趣部落", nil];
-    _baseImageArray = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"item_0"],[UIImage imageNamed:@"item_1"],[UIImage imageNamed:@"item_2"],[UIImage imageNamed:@"item_3"],[UIImage imageNamed:@"item_4"],[UIImage imageNamed:@"item_5"], nil];
+    _baseImageArray = [[NSArray alloc] initWithObjects:@"item_0",@"item_1",@"item_2",@"item_3",@"item_4",@"item_5", nil];
     _baseSubVCArray = [[NSArray alloc] initWithObjects:firstVC,seconVC,thirdVC,fourthVC,fifthVC,sixthVC, nil];
     
     MenuTabBarController *tabBarController = [[MenuTabBarController alloc] init];
@@ -59,7 +59,7 @@
             tabBarController.enlargeEnabled = YES;
             tabBarController.tabBarType = MenuTabBarTypeNormal;
             tabBarController.titleArray = _baseTitleArray;
-            tabBarController.imageArray = _baseImageArray;
+            tabBarController.imageNameArray = _baseImageArray;
             tabBarController.subViewControllers = _baseSubVCArray;
             break;
         }
@@ -68,7 +68,7 @@
             tabBarController.enlargeEnabled = YES;
             tabBarController.tabBarType = MenuTabBarTypeNormal;
             tabBarController.titleArray = [_baseTitleArray subarrayWithRange:NSMakeRange(0, 3)];
-            tabBarController.imageArray = [_baseImageArray subarrayWithRange:NSMakeRange(0, 3)];
+            tabBarController.imageNameArray = [_baseImageArray subarrayWithRange:NSMakeRange(0, 3)];
             tabBarController.subViewControllers = [_baseSubVCArray subarrayWithRange:NSMakeRange(0, 3)];
             break;
         }
@@ -77,7 +77,7 @@
             tabBarController.enlargeEnabled = YES;
             tabBarController.tabBarType = MenuTabBarTypeAverage;
             tabBarController.titleArray = [_baseTitleArray subarrayWithRange:NSMakeRange(0, 3)];
-            tabBarController.imageArray = [_baseImageArray subarrayWithRange:NSMakeRange(0, 3)];
+            tabBarController.imageNameArray = [_baseImageArray subarrayWithRange:NSMakeRange(0, 3)];
             tabBarController.subViewControllers = [_baseSubVCArray subarrayWithRange:NSMakeRange(0, 3)];
             break;
         }
@@ -86,17 +86,16 @@
             tabBarController.currentIndicatorColor = [UIColor blackColor];
             tabBarController.tabBarType = MenuTabBarTypeImage;
             tabBarController.titleArray = _baseTitleArray;
-            tabBarController.imageArray = _baseImageArray;
+            tabBarController.imageNameArray = _baseImageArray;
             tabBarController.subViewControllers = _baseSubVCArray;
             break;
         }
         case 4: //MenuTabBarTypeImage
         {
-            tabBarController.tabBarHeight = 100;
             tabBarController.currentIndicatorColor = [UIColor blackColor];
             tabBarController.tabBarType = MenuTabBarTypeImage;
             tabBarController.titleArray = [_baseTitleArray subarrayWithRange:NSMakeRange(0, 3)];
-            tabBarController.imageArray = [_baseImageArray subarrayWithRange:NSMakeRange(0, 3)];
+            tabBarController.imageNameArray = [_baseImageArray subarrayWithRange:NSMakeRange(0, 3)];
             tabBarController.subViewControllers = [_baseSubVCArray subarrayWithRange:NSMakeRange(0, 3)];
             break;
         }
@@ -104,7 +103,7 @@
         {
             tabBarController.tabBarType = MenuTabBarTypeArrow;
             tabBarController.titleArray = _baseTitleArray;
-            tabBarController.imageArray = _baseImageArray;
+            tabBarController.imageNameArray = _baseImageArray;
             tabBarController.subViewControllers = _baseSubVCArray;
             break;
         }
@@ -119,7 +118,7 @@
 {
     if (tabBarController.tabBarType == MenuTabBarTypeArrow) {
         tabBarController.titleArray = [_baseTitleArray subarrayWithRange:NSMakeRange(0, index+1)];
-        tabBarController.imageArray = [_baseImageArray subarrayWithRange:NSMakeRange(0, index+1)];
+        tabBarController.imageNameArray = [_baseImageArray subarrayWithRange:NSMakeRange(0, index+1)];
         tabBarController.subViewControllers = [_baseSubVCArray subarrayWithRange:NSMakeRange(0, index+1)];
         [tabBarController updateData];
     }

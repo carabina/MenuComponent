@@ -94,7 +94,7 @@
         }
         
         //## 分类处理
-        switch (self.subViewType)
+        switch (self.tabBarType)
         {
             case MenuTabBarTypeNormal:
             {
@@ -130,17 +130,17 @@
                     itemWidth = mainWidth/maxCount;
                 }
                 
-                UIImage *image = [self.imageArray objectAtIndex:i];
+                UIImage *image = [UIImage imageNamed:[self.imageNameArray objectAtIndex:i]];
                 CGFloat imageWidth = image.size.width;
                 CGFloat imageHeight = image.size.height;
                 
-                CGFloat top = (itemHeight-imageHeight-30)/2;
+                CGFloat top = (itemHeight-imageHeight-30)/2+5;
                 CGFloat left = (itemWidth-imageWidth)/2;
                 
                 itemBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
                 [itemBtn setImage:image forState:UIControlStateNormal];
                 [itemBtn setImageEdgeInsets:UIEdgeInsetsMake(top, left, itemHeight-imageHeight-top, left)];
-                [itemBtn setTitleEdgeInsets:UIEdgeInsetsMake(top+imageHeight+5, left-(imageWidth+titleWidth)/2, itemHeight-(top+imageHeight+30), 0)];
+                [itemBtn setTitleEdgeInsets:UIEdgeInsetsMake(top+imageHeight, left-(imageWidth+titleWidth)/2, itemHeight-(top+imageHeight+30), 0)];
                 break;
             }
             default:
@@ -152,7 +152,7 @@
     }
     
     //## 添加标示线
-    if (self.subViewType != MenuTabBarTypeArrow) {
+    if (self.tabBarType != MenuTabBarTypeArrow) {
         self.indicatorLine.backgroundColor = self.indicatorLineColor;
         [self.mainScrollView addSubview:self.indicatorLine];
         
@@ -160,7 +160,13 @@
         self.indicatorLine.left = sender.left;
         self.indicatorLine.width = sender.width;
     }
-    
+    //## 底部边线
+    if (self.tabBarType == MenuTabBarTypeImage) {
+        CALayer *layer = [CALayer layer];
+        layer.frame = CGRectMake(0, self.height-0.5, self.width, 0.5);
+        layer.backgroundColor = [[[UIColor lightGrayColor] colorWithAlphaComponent:0.5] CGColor];
+        [self.layer addSublayer:layer];
+    }
     //## 更新contentSize
     self.mainScrollView.contentSize = CGSizeMake(itemBtn.right, self.mainScrollView.height);
 }
@@ -188,7 +194,7 @@
         [self.mainScrollView setContentOffset:CGPointMake(0, 0) animated:YES];
     }
     
-    if (self.subViewType != MenuTabBarTypeArrow) {
+    if (self.tabBarType != MenuTabBarTypeArrow) {
         [UIView animateWithDuration:0.2
                          animations:^{
                              self.indicatorLine.left = sender.left;

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B6D61281EB9C963004EFFF6 /* item_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B6D61261EB9C963004EFFF6 /* item_arrow@2x.png */; };
-		8B6D61291EB9C963004EFFF6 /* item_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B6D61271EB9C963004EFFF6 /* item_arrow@3x.png */; };
+		8B21D72F1EB9CFA200D6E4BE /* item_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B21D72D1EB9CFA200D6E4BE /* item_arrow@2x.png */; };
+		8B21D7301EB9CFA200D6E4BE /* item_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B21D72E1EB9CFA200D6E4BE /* item_arrow@3x.png */; };
 		8BC124FF1EB9877700F71659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC124FE1EB9877700F71659 /* main.m */; };
 		8BC125021EB9877700F71659 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC125011EB9877700F71659 /* AppDelegate.m */; };
 		8BC125051EB9877700F71659 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC125041EB9877700F71659 /* ViewController.m */; };
@@ -41,8 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8B6D61261EB9C963004EFFF6 /* item_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_arrow@2x.png"; sourceTree = "<group>"; };
-		8B6D61271EB9C963004EFFF6 /* item_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_arrow@3x.png"; sourceTree = "<group>"; };
+		8B21D72D1EB9CFA200D6E4BE /* item_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_arrow@2x.png"; sourceTree = "<group>"; };
+		8B21D72E1EB9CFA200D6E4BE /* item_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_arrow@3x.png"; sourceTree = "<group>"; };
 		8BC124FA1EB9877700F71659 /* MenuComponentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuComponentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC124FE1EB9877700F71659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BC125001EB9877700F71659 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,11 +99,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B6D61251EB9C963004EFFF6 /* Resources */ = {
+		8B21D72C1EB9CFA200D6E4BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8B6D61261EB9C963004EFFF6 /* item_arrow@2x.png */,
-				8B6D61271EB9C963004EFFF6 /* item_arrow@3x.png */,
+				8B21D72D1EB9CFA200D6E4BE /* item_arrow@2x.png */,
+				8B21D72E1EB9CFA200D6E4BE /* item_arrow@3x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 				8BC125181EB9878E00F71659 /* MenuTabBar.m */,
 				8BC1251B1EB9882000F71659 /* UIView+Geometry.h */,
 				8BC1251C1EB9882000F71659 /* UIView+Geometry.m */,
-				8B6D61251EB9C963004EFFF6 /* Resources */,
+				8B21D72C1EB9CFA200D6E4BE /* Resources */,
 			);
 			name = MenuComponent;
 			path = ../../MenuComponent;
@@ -276,7 +276,7 @@
 			files = (
 				8BC125551EB98FCA00F71659 /* item_3@3x.png in Resources */,
 				8BC1254E1EB98FCA00F71659 /* item_0@2x.png in Resources */,
-				8B6D61281EB9C963004EFFF6 /* item_arrow@2x.png in Resources */,
+				8B21D72F1EB9CFA200D6E4BE /* item_arrow@2x.png in Resources */,
 				8BC1254F1EB98FCA00F71659 /* item_0@3x.png in Resources */,
 				8BC125581EB98FCA00F71659 /* item_5@2x.png in Resources */,
 				8BC125251EB98A0500F71659 /* default_top_bar@2x.png in Resources */,
@@ -288,7 +288,7 @@
 				8BC125511EB98FCA00F71659 /* item_1@3x.png in Resources */,
 				8BC1250A1EB9877700F71659 /* Assets.xcassets in Resources */,
 				8BC125081EB9877700F71659 /* Main.storyboard in Resources */,
-				8B6D61291EB9C963004EFFF6 /* item_arrow@3x.png in Resources */,
+				8B21D7301EB9CFA200D6E4BE /* item_arrow@3x.png in Resources */,
 				8BC125571EB98FCA00F71659 /* item_4@3x.png in Resources */,
 				8BC125521EB98FCA00F71659 /* item_2@2x.png in Resources */,
 				8BC125561EB98FCA00F71659 /* item_4@2x.png in Resources */,

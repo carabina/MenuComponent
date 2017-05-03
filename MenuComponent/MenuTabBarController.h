@@ -40,8 +40,8 @@
 @property (nonatomic,strong) UIColor *indicatorLineColor;
 //文字数组
 @property (nonatomic,strong) NSArray *titleArray;
-//图片数组
-@property (nonatomic,strong) NSArray *imageArray;
+//图片名称数组
+@property (nonatomic,strong) NSArray *imageNameArray;
 //子控制器数组
 @property (nonatomic,strong) NSArray *subViewControllers;
 //当前选择的Index

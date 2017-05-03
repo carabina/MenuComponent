@@ -24,7 +24,7 @@ typedef enum {
 //代理
 @property (nonatomic,assign) id<MenuTabBarDelegate> delegate;
 //类型
-@property (nonatomic,assign) MenuTabBarType subViewType;
+@property (nonatomic,assign) MenuTabBarType tabBarType;
 //点击切换文字是否变大
 @property (nonatomic,assign) BOOL enlargeEnabled;
 //字体
@@ -37,8 +37,8 @@ typedef enum {
 @property (nonatomic,strong) UIColor *indicatorLineColor;
 //文字数组
 @property (nonatomic,strong) NSArray *titleArray;
-//图片数组
-@property (nonatomic,strong) NSArray *imageArray;
+//图片名称数组
+@property (nonatomic,strong) NSArray *imageNameArray;
 //当前选择的Index
 @property (nonatomic,assign) NSInteger currentIndex;
 

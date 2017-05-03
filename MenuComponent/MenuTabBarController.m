@@ -50,7 +50,7 @@
 - (void)updateData
 {
     self.menuTabBar.titleArray = self.titleArray;
-    self.menuTabBar.imageArray = self.imageArray;
+    self.menuTabBar.imageNameArray = self.imageNameArray;
     [self.menuTabBar updateData];
     
     for (UIViewController *subVC in self.childViewControllers) {
@@ -102,9 +102,9 @@
         _menuTabBar = [[MenuTabBar alloc] initWithFrame:CGRectMake(0, 0, self.view.width, height)];
         _menuTabBar.delegate = self;
         _menuTabBar.font = self.font;
-        _menuTabBar.subViewType = self.tabBarType;
+        _menuTabBar.tabBarType = self.tabBarType;
         _menuTabBar.titleArray = self.titleArray;
-        _menuTabBar.imageArray = self.imageArray;
+        _menuTabBar.imageNameArray = self.imageNameArray;
         _menuTabBar.enlargeEnabled = self.enlargeEnabled;
         _menuTabBar.indicatorColor = self.indicatorColor;
         _menuTabBar.currentIndicatorColor = self.currentIndicatorColor;
