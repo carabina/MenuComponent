@@ -8,6 +8,10 @@
 
 #import "MenuTabBar.h"
 
+//## 宏定义
+//iPhone6p
+#define kIphone6P   CGSizeEqualToSize(CGSizeMake(1242,2208),[[[UIScreen mainScreen] currentMode] size])
+
 @interface MenuTabBar ()
 
 //滚动视图
@@ -115,7 +119,7 @@
                 if (i == count-1) {
                     [itemBtn setTitleColor:self.currentIndicatorColor forState:UIControlStateNormal];
                 } else {
-                    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"item_arrow"]];
+                    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.arrowImageName]];
                     imageView.origin = CGPointMake(itemWidth-imageView.width, (itemHeight-imageView.height)/2);
                     [itemBtn addSubview:imageView];
                 }

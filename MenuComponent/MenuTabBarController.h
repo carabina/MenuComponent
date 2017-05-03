@@ -44,6 +44,8 @@
 @property (nonatomic,strong) NSArray *imageNameArray;
 //子控制器数组
 @property (nonatomic,strong) NSArray *subViewControllers;
+//MenuTabBarTypeArrow类型下的arrow图片名称
+@property (nonatomic,copy) NSString *arrowImageName;
 //当前选择的Index
 @property (nonatomic,assign,readonly) NSInteger currentIndex;
 

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B21D72F1EB9CFA200D6E4BE /* item_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B21D72D1EB9CFA200D6E4BE /* item_arrow@2x.png */; };
-		8B21D7301EB9CFA200D6E4BE /* item_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B21D72E1EB9CFA200D6E4BE /* item_arrow@3x.png */; };
+		8B21D7391EB9D7E400D6E4BE /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B21D7381EB9D7E400D6E4BE /* UIView+Category.m */; };
+		8B21D73C1EB9D9DD00D6E4BE /* item_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B21D73A1EB9D9DD00D6E4BE /* item_arrow@2x.png */; };
+		8B21D73D1EB9D9DD00D6E4BE /* item_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B21D73B1EB9D9DD00D6E4BE /* item_arrow@3x.png */; };
 		8BC124FF1EB9877700F71659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC124FE1EB9877700F71659 /* main.m */; };
 		8BC125021EB9877700F71659 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC125011EB9877700F71659 /* AppDelegate.m */; };
 		8BC125051EB9877700F71659 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC125041EB9877700F71659 /* ViewController.m */; };
@@ -17,7 +18,6 @@
 		8BC1250D1EB9877700F71659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC1250B1EB9877700F71659 /* LaunchScreen.storyboard */; };
 		8BC125191EB9878E00F71659 /* MenuTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC125161EB9878E00F71659 /* MenuTabBarController.m */; };
 		8BC1251A1EB9878E00F71659 /* MenuTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC125181EB9878E00F71659 /* MenuTabBar.m */; };
-		8BC1251D1EB9882000F71659 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1251C1EB9882000F71659 /* UIView+Geometry.m */; };
 		8BC125251EB98A0500F71659 /* default_top_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC125241EB98A0500F71659 /* default_top_bar@2x.png */; };
 		8BC1254E1EB98FCA00F71659 /* item_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC125421EB98FCA00F71659 /* item_0@2x.png */; };
 		8BC1254F1EB98FCA00F71659 /* item_0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC125431EB98FCA00F71659 /* item_0@3x.png */; };
@@ -41,8 +41,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8B21D72D1EB9CFA200D6E4BE /* item_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_arrow@2x.png"; sourceTree = "<group>"; };
-		8B21D72E1EB9CFA200D6E4BE /* item_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_arrow@3x.png"; sourceTree = "<group>"; };
+		8B21D7371EB9D7E400D6E4BE /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		8B21D7381EB9D7E400D6E4BE /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		8B21D73A1EB9D9DD00D6E4BE /* item_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_arrow@2x.png"; sourceTree = "<group>"; };
+		8B21D73B1EB9D9DD00D6E4BE /* item_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_arrow@3x.png"; sourceTree = "<group>"; };
 		8BC124FA1EB9877700F71659 /* MenuComponentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuComponentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC124FE1EB9877700F71659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BC125001EB9877700F71659 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,8 +59,6 @@
 		8BC125161EB9878E00F71659 /* MenuTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTabBarController.m; sourceTree = "<group>"; };
 		8BC125171EB9878E00F71659 /* MenuTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTabBar.h; sourceTree = "<group>"; };
 		8BC125181EB9878E00F71659 /* MenuTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTabBar.m; sourceTree = "<group>"; };
-		8BC1251B1EB9882000F71659 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
-		8BC1251C1EB9882000F71659 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
 		8BC125241EB98A0500F71659 /* default_top_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_top_bar@2x.png"; sourceTree = "<group>"; };
 		8BC125421EB98FCA00F71659 /* item_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_0@2x.png"; sourceTree = "<group>"; };
 		8BC125431EB98FCA00F71659 /* item_0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_0@3x.png"; sourceTree = "<group>"; };
@@ -99,15 +99,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B21D72C1EB9CFA200D6E4BE /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8B21D72D1EB9CFA200D6E4BE /* item_arrow@2x.png */,
-				8B21D72E1EB9CFA200D6E4BE /* item_arrow@3x.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		8BC124F11EB9877700F71659 = {
 			isa = PBXGroup;
 			children = (
@@ -159,9 +150,8 @@
 				8BC125161EB9878E00F71659 /* MenuTabBarController.m */,
 				8BC125171EB9878E00F71659 /* MenuTabBar.h */,
 				8BC125181EB9878E00F71659 /* MenuTabBar.m */,
-				8BC1251B1EB9882000F71659 /* UIView+Geometry.h */,
-				8BC1251C1EB9882000F71659 /* UIView+Geometry.m */,
-				8B21D72C1EB9CFA200D6E4BE /* Resources */,
+				8B21D7371EB9D7E400D6E4BE /* UIView+Category.h */,
+				8B21D7381EB9D7E400D6E4BE /* UIView+Category.m */,
 			);
 			name = MenuComponent;
 			path = ../../MenuComponent;
@@ -170,6 +160,8 @@
 		8BC125231EB989F800F71659 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8B21D73A1EB9D9DD00D6E4BE /* item_arrow@2x.png */,
+				8B21D73B1EB9D9DD00D6E4BE /* item_arrow@3x.png */,
 				8BC125421EB98FCA00F71659 /* item_0@2x.png */,
 				8BC125431EB98FCA00F71659 /* item_0@3x.png */,
 				8BC125441EB98FCA00F71659 /* item_1@2x.png */,
@@ -276,7 +268,7 @@
 			files = (
 				8BC125551EB98FCA00F71659 /* item_3@3x.png in Resources */,
 				8BC1254E1EB98FCA00F71659 /* item_0@2x.png in Resources */,
-				8B21D72F1EB9CFA200D6E4BE /* item_arrow@2x.png in Resources */,
+				8B21D73C1EB9D9DD00D6E4BE /* item_arrow@2x.png in Resources */,
 				8BC1254F1EB98FCA00F71659 /* item_0@3x.png in Resources */,
 				8BC125581EB98FCA00F71659 /* item_5@2x.png in Resources */,
 				8BC125251EB98A0500F71659 /* default_top_bar@2x.png in Resources */,
@@ -288,7 +280,7 @@
 				8BC125511EB98FCA00F71659 /* item_1@3x.png in Resources */,
 				8BC1250A1EB9877700F71659 /* Assets.xcassets in Resources */,
 				8BC125081EB9877700F71659 /* Main.storyboard in Resources */,
-				8B21D7301EB9CFA200D6E4BE /* item_arrow@3x.png in Resources */,
+				8B21D73D1EB9D9DD00D6E4BE /* item_arrow@3x.png in Resources */,
 				8BC125571EB98FCA00F71659 /* item_4@3x.png in Resources */,
 				8BC125521EB98FCA00F71659 /* item_2@2x.png in Resources */,
 				8BC125561EB98FCA00F71659 /* item_4@2x.png in Resources */,
@@ -309,7 +301,7 @@
 				8BC1251A1EB9878E00F71659 /* MenuTabBar.m in Sources */,
 				8BC125021EB9877700F71659 /* AppDelegate.m in Sources */,
 				8BC125191EB9878E00F71659 /* MenuTabBarController.m in Sources */,
-				8BC1251D1EB9882000F71659 /* UIView+Geometry.m in Sources */,
+				8B21D7391EB9D7E400D6E4BE /* UIView+Category.m in Sources */,
 				8BC1256A1EB9907C00F71659 /* FifthViewController.m in Sources */,
 				8BC1256C1EB9907C00F71659 /* FourthViewController.m in Sources */,
 				8BC124FF1EB9877700F71659 /* main.m in Sources */,

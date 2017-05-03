@@ -1,14 +1,14 @@
 //
-//  UIView+Geometry.m
+//  UIView+Category.m
 //  MenuComponent
 //
 //  Created by LEA on 2017/5/3.
 //  Copyright © 2017年 LEA. All rights reserved.
 //
 
-#import "UIView+Geometry.h"
+#import "UIView+Category.h"
 
-@implementation UIView (Geometry)
+@implementation UIView (Category)
 
 - (CGPoint)origin
 {

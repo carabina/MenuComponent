@@ -101,6 +101,7 @@
         }
         case 5: //MenuTabBarTypeArrow
         {
+            tabBarController.arrowImageName = @"item_arrow";
             tabBarController.tabBarType = MenuTabBarTypeArrow;
             tabBarController.titleArray = _baseTitleArray;
             tabBarController.imageNameArray = _baseImageArray;

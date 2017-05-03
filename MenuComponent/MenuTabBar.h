@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIView+Geometry.h"
+#import "UIView+Category.h"
 
 //## 枚举
 typedef enum {
@@ -39,6 +39,8 @@ typedef enum {
 @property (nonatomic,strong) NSArray *titleArray;
 //图片名称数组
 @property (nonatomic,strong) NSArray *imageNameArray;
+//MenuTabBarTypeArrow类型下的arrow图片名称
+@property (nonatomic,copy) NSString *arrowImageName;
 //当前选择的Index
 @property (nonatomic,assign) NSInteger currentIndex;
 

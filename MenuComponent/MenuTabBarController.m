@@ -109,6 +109,7 @@
         _menuTabBar.indicatorColor = self.indicatorColor;
         _menuTabBar.currentIndicatorColor = self.currentIndicatorColor;
         _menuTabBar.indicatorLineColor = self.indicatorLineColor;
+        _menuTabBar.arrowImageName = self.arrowImageName;
         [_menuTabBar updateData];
     }
     return _menuTabBar;
