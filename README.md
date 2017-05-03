@@ -5,6 +5,7 @@
 [![CocoaPods](http://img.shields.io/cocoapods/p/MenuComponent.svg?style=flat)](https://cocoapods.org/pods/MenuComponent)&nbsp;
 
 多功能滑动菜单，实现各控制器的滚动展示，支持点击、左右滑动以及分级。
+
 ![MenuComponent](MenuComponent.gif)
 
 ## 安装 [CocoaPods]
@@ -83,7 +84,9 @@ tabBarController.titleArray = @[@"新朋友",@"群聊",@"公众号"];
 tabBarController.imageArray = @[[UIImage imageNamed:@"item_0"],[UIImage imageNamed:@"item_1"],[UIImage imageNamed:@"item_2"]];
 tabBarController.subViewControllers = @[firstVC,seconVC,thirdVC];
 [tabBarController setParentController:self];
+```
 
+```objc
 #pragma mark - MenuTabBarControllerDelegate
 - (void)tabBarController:(MenuTabBarController *)tabBarController didSelectAtIndex:(NSInteger)index
 {
